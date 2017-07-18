@@ -1,7 +1,7 @@
 import './style/main.scss'
-import React from 'react' // use jsx
+import React from 'react'
 import faker from 'faker'
-import ReactDom from 'react-dom' //  render jsx
+import ReactDom from 'react-dom'
 import cowsay from 'cowsay-browser'
 
 class App extends React.Component {
@@ -9,7 +9,7 @@ class App extends React.Component {
     super(props)
     this.state = {
       content: cowsay.say({
-        text: faker.hacker.phrase(),
+        text: "What would you like to learn, friend?",
         e: "oO",
         T: "U "
       }),
@@ -33,10 +33,10 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="cow-div">
         <h1>Hacker Cow Says...</h1>
         <pre>{this.state.content}</pre>
-        <button onClick={this.handleClick}>Get More Hacker Advice</button>
+        <button onClick={this.handleClick}>Get Hacker Cow Advice</button>
       </div>
     )
   }

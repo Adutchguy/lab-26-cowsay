@@ -4,9 +4,33 @@ $color-primary: #D5D5D5;
   box-sizing: border-box;
   width: 100%;
   font-size: 1em;
+  margin: 0;
+  padding: 0;
+  position: relative;
 }
 
 body {
   background: $color-primary;
   font-size: 16px;
+}
+
+h1 {
+  font-size: 2em;
+  text-align: center;
+}
+
+.cow-div{
+  position: absolute;
+  left: 50%;
+  width: 50%;
+  // margin-left: auto;
+  // margin-right: auto;
+  transform: translateX(-50%);
+}
+
+.cow-div button {
+  left: 50%;
+  margin-top: 1em;
+  width: 50%;
+  transform: translateX(-50%);
 }
